@@ -1,0 +1,55 @@
+{
+  "easy": [
+    {
+      "text": "The sun is shining brightly today. Birds are singing in the trees. I enjoy spending time outside with my friends and family."
+    },
+    {
+      "text": "Reading books is a great way to learn new things. Every day brings a new opportunity to explore and discover something interesting."
+    },
+    {
+      "text": "Practice makes progress. Start with small steps, stay focused, and keep learning. You can achieve great things with patience."
+    },
+    {
+      "text": "My favorite hobby is listening to music. It makes me feel happy and relaxed after a long and busy day."
+    },
+    {
+      "text": "A healthy lifestyle includes good food, regular exercise, and enough sleep. Small habits can make a big difference."
+    }
+  ],
+
+  "medium": [
+    {
+      "text": "Technology has changed the way people communicate, work, and learn. With the internet, information is available almost instantly, making everyday tasks easier and faster."
+    },
+    {
+      "text": "Developing a new skill requires patience, dedication, and consistent practice. Progress may feel slow at first, but every small improvement brings you closer to your goal."
+    },
+    {
+      "text": "Time management is an important skill for students and professionals. Planning your daily activities helps you stay organized, reduce stress, and complete tasks efficiently."
+    },
+    {
+      "text": "Successful people understand that mistakes are part of learning. Instead of giving up, they use challenges as opportunities to improve their knowledge and abilities."
+    },
+    {
+      "text": "The natural world is full of amazing discoveries. Forests, oceans, mountains, and wildlife remind us why protecting our environment is so important."
+    }
+  ],
+
+  "hard": [
+    {
+      "text": "Modern technology continues to transform industries through automation, artificial intelligence, and advanced communication systems. However, innovation must be balanced with responsibility, security, and ethical considerations."
+    },
+    {
+      "text": "Consistency is often more valuable than perfection. Individuals who establish realistic goals, evaluate their progress, and adapt their strategies are more likely to achieve meaningful long-term results."
+    },
+    {
+      "text": "Programming requires logical thinking, creativity, and attention to detail. A developer must understand complex problems, organize information efficiently, and transform ideas into reliable applications."
+    },
+    {
+      "text": "Environmental sustainability depends on collective responsibility. Reducing unnecessary consumption, conserving natural resources, and supporting renewable energy can contribute to a healthier planet."
+    },
+    {
+      "text": "Effective communication involves more than expressing ideas clearly; it also requires active listening, thoughtful responses, and the ability to understand different perspectives."
+    }
+  ]
+}

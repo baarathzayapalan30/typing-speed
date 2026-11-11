@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#121212">
+
+    <title>Typing Speed Test</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" alt=""
+        href="./assets/images/favicon-32x32.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Header -->
+        <header class="topbar">
+
+             <picture class="brand-logo">
+        <source
+            media="(max-width: 600px)"
+            srcset="./assets/images/logo-small.svg">
+
+        <img
+            src="./assets/images/logo-large.svg"
+            alt="Typing Speed Test">
+    </picture>
+
+    <span class="brand-copy">
+       
+    </span>
+</a>
+
+            <div class="personal-best">
+
+                <img src="./assets/images/icon-personal-best.svg"
+                    alt="Personal best">
+
+                <span>
+                    Personal best:
+                    <strong id="personalBest">0</strong> WPM
+                </span>
+
+            </div>
+
+        </header>
+
+        <!-- Main Test Section -->
+        <section class="test-area">
+
+            <!-- Toolbar -->
+            <div class="toolbar">
+
+                <!-- Statistics -->
+                <div class="stats">
+
+                    <div class="stat">
+                        <span>WPM:</span>
+                        <strong id="wpm">0</strong>
+                    </div>
+
+                    <div class="stat">
+                        <span>Accuracy:</span>
+                        <strong id="accuracy">100%</strong>
+                    </div>
+
+                    <div class="stat">
+                        <span>Time:</span>
+                        <strong id="time">0:60</strong>
+                    </div>
+
+                </div>
+
+                <!-- Settings -->
+                <div class="settings">
+
+                    <!-- Difficulty -->
+                    <div class="setting-group">
+
+                        <span class="setting-label">
+                            Difficulty:
+                        </span>
+
+                        <div class="segmented">
+
+                            <button class="choice"
+                                data-difficulty="easy">
+                                Easy
+                            </button>
+
+                            <button class="choice"
+                                data-difficulty="medium">
+                                Medium
+                            </button>
+
+                            <button class="choice active"
+                                data-difficulty="hard">
+                                Hard
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Mode -->
+                    <div class="setting-group mode-group">
+
+                        <span class="setting-label">
+                            Mode:
+                        </span>
+
+                        <div class="segmented">
+
+                            <button class="choice active"
+                                data-mode="timed">
+                                Timed (60s)
+                            </button>
+
+                            <button class="choice"
+                                data-mode="passage">
+                                Passage
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Restart -->
+                    <button class="restart-button"
+                        id="restartButton">
+
+                        <img src="./assets/images/icon-restart.svg"
+                            alt="">
+
+                        <span>Restart</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Typing Passage -->
+            <div class="passage-wrap" id="passageWrap">
+
+                <div class="passage"
+                    id="passage"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Click here and start typing">
+                </div>
+
+                <textarea
+                    id="typingInput"
+                    class="typing-input"
+                    aria-label="Type the passage here"
+                    autocomplete="off"
+                    autocapitalize="off"
+                    spellcheck="false">
+                </textarea>
+
+                <!-- Start Overlay -->
+                <div class="start-overlay" id="startOverlay">
+
+                    <button class="start-button"
+                        id="startButton">
+                        Start Typing Test
+                    </button>
+
+                    <p>
+                        Or click the text and start typing
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Keyboard Hint -->
+            <p class="keyboard-hint" id="keyboardHint">
+
+                Tip: Press the
+                <kbd>Tab</kbd>
+                key to focus the typing area.
+
+            </p>
+
+            <!-- Results Section -->
+            <section class="results hidden"
+                id="results"
+                aria-live="polite">
+
+                <div class="result-icon" id="resultIcon">
+
+                    <img src="./assets/images/icon-completed.svg"
+                        alt="Completed">
+
+                </div>
+
+                <h1 id="resultTitle">
+                    Test Complete!
+                </h1>
+
+                <p class="result-message" id="resultMessage">
+                    Solid run. Keep pushing to beat your high score.
+                </p>
+
+                <!-- Final Statistics -->
+                <div class="result-stats">
+
+                    <div>
+                        <span>WPM</span>
+                        <strong id="finalWpm">0</strong>
+                    </div>
+
+                    <div>
+                        <span>Accuracy</span>
+                        <strong id="finalAccuracy">100%</strong>
+                    </div>
+
+                    <div>
+                        <span>Characters</span>
+                        <strong id="finalCharacters">0/0</strong>
+                    </div>
+
+                </div>
+
+                <!-- Play Again -->
+                <button class="again-button"
+                    id="againButton">
+
+                    Go Again
+
+                    <img src="./assets/images/icon-restart.svg"
+                        alt="">
+
+                </button>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
